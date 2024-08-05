@@ -1,0 +1,125 @@
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+	outline: 0 !important;
+	outline-offset: 0;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--primary-color: #1a3636;
+	--secondary-color: white;
+	--text-color: black;
+	--primary-font: "Courier New", Courier, monospace;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--primary-font);
+	font-size: 100%;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 600;
+}
+.main-btn {
+	display: inline-block;
+	padding: 0.625rem 1.8rem;
+	line-height: 1.56rem;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	box-shadow: 0px 2px 8px -1px grey;
+}
+.white-btn {
+	display: inline-block;
+	padding: 0.625rem 1.8rem;
+	line-height: 1.56rem;
+	background-color: var(--secondary-color);
+	color: var(--text-color);
+	box-shadow: 0px 2px 8px -1px grey;
+}
+.main-btn:hover {
+	background-color: transparent;
+	color: black;
+}
+
+/* Navbar */
+.navigation-wrap {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	padding: 1rem 3rem;
+	z-index: 1000;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.navigation-wrap.scroll-on {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: var(--secondary-color);
+	box-shadow: 0 0.125rem 0.55rem 0 rgb(167, 166, 166, 0.09);
+	transition: all 0.15s ease-out;
+}
+
+.navigation-wrap .nav-item {
+	padding: 0 0.625rem;
+
+	transition: all 200ms linear;
+}
+.navbar-toggler:focus {
+	outline: unset;
+	border: unset;
+	box-shadow: none;
+}
+.nav-link {
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: capitalize;
+	color: var(--primary-color);
+	letter-spacing: 1px;
+}
+
+.top-banner {
+	width: 100%;
+	background: url("../images/bgg.jpg") no-repeat center;
+	background-size: cover;
+	padding: 16.87rem 0 9.5rem;
+}
+
+/* COUNTER */
+.counter-section {
+	background-color: var(--primary-color);
+	padding: 2.5rem 0;
+}
+.counter-section p,
+h2 {
+	color: var(--secondary-color);
+	text-transform: uppercase;
+}
