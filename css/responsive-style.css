@@ -15,8 +15,28 @@
 	.navigation-wrap .nav-link {
 		line-height: 1.875rem;
 	}
+	.story-section {
+		height: auto;
+		padding: 3rem 0;
+		text-align: center;
+	}
 }
 @media (max-width: 767px) {
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+
+	.top-banner {
+		padding: 10.8rem 0 9.3rem;
+	}
+	.story-section {
+		height: auto;
+		width: 100%;
+	}
 }
 @media (max-width: 1024px) {
 }
