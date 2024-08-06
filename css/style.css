@@ -30,7 +30,8 @@ ol {
 	--primary-color: #1a3636;
 	--secondary-color: white;
 	--text-color: black;
-	--primary-font: "Courier New", Courier, monospace;
+	--primary-font: var(--primary-color);
+	font-family: "sans-serif";
 }
 
 html {
@@ -211,20 +212,45 @@ h2 {
 
 .reviews-section {
 	background-color: var(--primary-color);
+	margin: 20px 0;
+	padding: 2%;
 }
-.reviews-section .carousel-item {
-	margin-top: 1rem;
-	padding: 6rem 3rem;
-	background-color: white;
-	border-radius: 0.9rem;
+
+.carousel-item .col {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end; /* Ensure captions are at the bottom */
+	align-items: center;
+	position: relative;
+}
+.carousel-item img {
+	max-height: 350px; /* Adjust the height of the images as needed */
+	object-fit: cover;
+}
+.carousel-caption {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(232, 230, 230, 0.834); /* Slightly transparent background */
+	padding: 1rem;
 	text-align: center;
 }
-.reviews-section .carousel-item img {
-	max-width: 15rem;
-	border-radius: 50%;
+.carousel-caption h5 {
+	color: rgb(148, 16, 16);
+	font-weight: 600;
+	text-transform: none;
 }
-.reviews-section .carousel-item .carousel-caption p {
-	font-size: 1.3rem;
-	line-height: 2rem;
-	padding: 0 11% 0.65rem;
+.carousel-indicators {
+	position: static;
+	margin-top: 20px; /* Adjust this value as needed */
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+}
+
+.carousel-indicators button {
+	background-color: gray; /* Custom color for indicators */
+	border: none; /* Remove border */
 }
