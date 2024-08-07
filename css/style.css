@@ -124,10 +124,33 @@ h3 {
 }
 
 .top-banner {
+	height: 35rem;
 	width: 100%;
-	background: url("../images/bgg.jpg") no-repeat center;
+	background: url(../images/bgg.jpg) no-repeat center;
 	background-size: cover;
-	padding: 16.87rem 0 9.5rem;
+	padding: 13rem 0 9.5rem;
+}
+
+.grid-food .row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.grid-food .column {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	max-width: 35%;
+	padding: 0 4px;
+}
+
+.grid-food .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
 }
 
 /* COUNTER */
@@ -192,9 +215,7 @@ h2 {
 .explore-section h2 {
 	color: var(--primary-color);
 }
-.explore-section p {
-	padding: 0 15%;
-}
+
 .explore-section .card {
 	border: none;
 	background-color: transparent;

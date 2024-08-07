@@ -15,33 +15,43 @@
 	.navigation-wrap .nav-link {
 		line-height: 1.875rem;
 	}
-	.food-types .me-auto {
-		margin-top: 5rem;
-	}
+
 	.story-section {
 		height: auto;
 		padding: 3rem 0;
 		text-align: center;
 	}
+	.food-types .column {
+		-ms-flex: 80%;
+		flex: 80%;
+		max-width: 80%;
+	}
 }
-@media (max-width: 853px) {
-	h1 {
-		font-size: 2rem;
+@media screen and (max-width: 800px) {
+	.column {
+		-ms-flex: 80%;
+		flex: 80%;
+		max-width: 80%;
 	}
-	h2 {
-		font-size: 122rem;
-		line-height: 200rem !important;
-		color: red !important;
-	}
+}
 
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+@media screen and (min-width: 853px) {
 	.top-banner {
+		background: url("../images/bgg.jpg") no-repeat center;
+		background-attachment: fixed;
+		background-position: ;
 	}
 	.story-section {
 		height: auto;
 		width: 100%;
-	}
-	.food-types .me-auto {
-		margin-top: 5rem;
 	}
 
 	.newsletter {
@@ -55,4 +65,7 @@
 	.footer a i {
 		padding: 0 0.7rem;
 	}
+	/* .grid-food {
+		width: 100%;
+	} */
 }
